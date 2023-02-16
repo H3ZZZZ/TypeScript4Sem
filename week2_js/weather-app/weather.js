@@ -44,7 +44,12 @@ const getWeatherFromLocation = async () => {
     const weather = await getWeather(coords);
     document.getElementById("weather").innerHTML = weather.main.temp;
     document.getElementById("weather").innerHTML =
-      weather.main.temp + " " + weather.weather[0].description;
+      weather.main.temp +
+      " " +
+      weather.weather[0].description +
+      " " +
+      weather.name;
+    // document.getElementById("weather").innerHTML = weather.name;
     console.log(weather);
   } catch (error) {
     console.log(error);
