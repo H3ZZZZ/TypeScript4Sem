@@ -12,5 +12,8 @@
   "dependencies": {
     "node-fetch": "^3.3.0",
     "superagent": "^8.0.9"
+  },
+  "devDependencies": {
+    "json-server": "^0.17.1"
   }
 }
