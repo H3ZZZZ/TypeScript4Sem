@@ -1,0 +1,25 @@
+{
+  "name": "inclass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/http-server": "^0.12.1",
+    "@types/node": "^18.14.6",
+    "ts-node": "^10.9.1"
+  },
+  "dependencies": {
+    "@types/dot": "^1.1.5",
+    "@types/http-server": "0.12.1",
+    "dotenv": "^16.0.3",
+    "http": "^0.0.1-security",
+    "lodash": "^4.17.21",
+    "log4js": "^6.9.0"
+  }
+}
