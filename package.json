@@ -10,8 +10,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/cors": "^2.8.13",
+    "cors": "^2.8.5",
     "http": "^0.0.1-security",
     "node-fetch": "^3.3.0",
+    "slugify": "^1.6.5",
     "superagent": "^8.0.9"
   },
   "devDependencies": {

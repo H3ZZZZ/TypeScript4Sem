@@ -2,6 +2,10 @@ import * as dotenv from 'dotenv';
 dotenv.config({ path: './config.env' });
 import mongoose = require('mongoose');
 import app from './app';
+import cors from 'cors';
+
+app.use(cors());
+
 
 const DB = process.env.DATABASE_DEV!.replace(
   '<PASSWORD>',

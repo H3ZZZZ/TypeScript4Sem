@@ -9,7 +9,6 @@ interface Person {
   city: string;
 }
 
-
 export const getAllPersons = async (
   req: Request,
   res: Response,

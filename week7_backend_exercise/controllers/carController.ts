@@ -53,10 +53,11 @@ export const getAllCars = async (
   next: NextFunction,
 ) => {
   try {
+    const queryObj = req.query;
     res.status(200).json({
       status: 'success',
       method: 'GET',
-      data: await Car.find(),
+      data: await Car.find(queryObj),
     });
   } catch (err: any) {
     logger.log(err);
@@ -73,7 +74,9 @@ export const getCarById = async (
     res.status(200).json({
       status: 'success',
       method: 'GET',
-      data: await Car.findById(req.params.id),
+      data: await Car.findById(req.params.id).populate({
+        path: 'reviews',
+    }).select('-__v'),
     });
   } catch (err: any) {
     logger.log(err);
